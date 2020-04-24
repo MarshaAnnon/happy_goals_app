@@ -1,0 +1,42 @@
+<h1>Welcome, <%= current_user.name %>! </h1>
+<h3>Edit your Try Something New</h3>
+<form action="/goals/<%= @goal.id %>" method="POST">
+<input id="hidden" type="hidden" name="_method" value="PATCH">
+    <br>
+    <br>
+    <h3>Goal Type:</h3>
+    <p><%= @goal_type %></p>
+    <input id="daily" type="text" name="daily" value="<%= @goal.daily %>">
+    
+    <br>
+    <br>
+    <h3>Goal:</h3>
+    <p><%= @goal.weekly %></p>
+    <input id="weekly" type="text" name="weekly">
+    <h4><a href="/goals/#{goal.id}/edit">Edit your weekly goals</a></h4>
+    <br>
+    <br>
+    <h3>Monthy Goal:</h3>
+    <p><%= @goal.monthly %></p>
+    <input id="monthly" type="text" name="monthly">
+    <h4><a href="/goals/#{goal.id}/edit">Edit your monthly goals</a></h4>
+    <br>
+    <br>
+    <h3>Yearly Goal:</h3>
+    <p><%= @goal.yearly %></p>
+    <input id="yearly" type="text" name="yearly">
+    <h4><a href="/goals/#{goal.id}/edit">Edit your yearly goals</a></h4>
+    <br>
+    <br>
+    <label for="rate_experience">Rate Experience:</label>
+    <select id="rate_experience" name="rate_experience">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br>
+    <br>
+    <input id="submit" type="submit" value="Submit">
+</form>

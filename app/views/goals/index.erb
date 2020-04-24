@@ -1,0 +1,60 @@
+<h1>Hi, <%= current_user.name %> </h1>
+<h2>Welcome, to the Try Something New App!</h2>
+
+<h4><a href="/goals/new">Have something new you want to try?</a></h4>
+<br>
+<br>
+<% if current_user.goals != [] %>
+   <%= Would you like to create some things to try? %>
+<%end%>
+
+<h3>Here are your goals!</h3>
+<%if @user_goals%>
+<table style="width:100%">
+  <tr>
+    <th>To try</th>
+    <th>Timespan</th>
+    <th>Details</th>
+    <th>Hurdles</th>
+    <th>Rate Experience</th>
+  </tr>
+
+  <%@user_goals.each do | goal |%>
+    <tr>
+    <td><%= goal.goal_name %></td>
+    <td><%= goal.goal_type %></td>
+    <td><%= goal.goal_details %></td>
+    <td><%= goal.obstacles %></td>
+    <td><%= goal.rate_experience %></td>
+  </tr>
+  <%end%>
+  </table>
+  <%end%>
+
+  
+<br>
+<br>
+
+<h3>Why not check out what others want to try too!</h3>
+
+<%if @goals%>
+<table style="width:100%">
+  <tr>
+    <th>To try</th>
+    <th>Timespan</th>
+    <th>Details</th>
+    <th>Hurdles</th>
+    <th>Rate Experience</th>
+  </tr>
+
+  <%@goals.each do | goal |%>
+    <tr>
+    <td><%= goal.goal_name %></td>
+    <td><%= goal.goal_type %></td>
+    <td><%= goal.goal_details %></td>
+    <td><%= goal.obstacles %></td>
+    <td><%= goal.rate_experience %></td>
+  </tr>
+  <%end%>
+  </table>
+<%end%>

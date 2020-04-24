@@ -1,0 +1,11 @@
+User.create(name: Faker::Name.name, email: Faker::Internet.email, password: "password")
+User.create(name: Faker::Name.name, email: Faker::Internet.email, password: "password")
+User.create(name: Faker::Name.name, email: Faker::Internet.email, password: "password")
+User.create(name: Faker::Name.name, email: Faker::Internet.email, password: "password")
+User.create(name: Faker::Name.name, email: Faker::Internet.email, password: "password")
+
+Goal.create(goal_name: "Say no to negativity", goal_type: "daily", goal_details: "I am letting go of negative vibes and embracing positivity through the power of yes!", obstacles: "I like to say no", rate_experience: " ", user_id:1 )
+Goal.create(goal_name: "Say no to negativity", goal_type: "Try out a new meetup", goal_details: "Go on a road trip", obstacles: "vacation somewhere different", rate_experience: " ", user_id:2 )
+Goal.create(goal_name: "Say no to negativity", goal_type: "Try out a new meetup", goal_details: "Go on a road trip", obstacles: "vacation somewhere different", rate_experience: " ", user_id:3 )
+Goal.create(goal_name: "Say no to negativity", goal_type: "Try out a new meetup", goal_details: "Go on a road trip", obstacles: "vacation somewhere different", rate_experience: " ", user_id:4 )
+Goal.create(goal_name: "Say no to negativity", goal_type: "Try out a new meetup", goal_details: "Go on a road trip", obstacles: "vacation somewhere different", rate_experience: " ", user_id:5 ) 

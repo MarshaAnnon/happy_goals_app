@@ -1,0 +1,46 @@
+<h1>Hi, <%= current_user.name %>!</h1>
+<h2>Why not try something new today!</h2>
+<br>
+<br>
+
+<h4><a href="/goals/new">Have something new you want to try?</a></h4>
+<br>
+<br>
+<h3>Here's current list of things you want to try!</h3>
+
+<%if @user_goals%>
+<table style="width:100%">
+  <tr>
+    <th>To try</th>
+    <th>Timespan</th>
+    <th>Details</th>
+    <th>Hurdles</th>
+    <th>Rate Experience</th>
+  </tr>
+
+  <%@user_goals.each do | goal |%>
+    <tr>
+    <td><%= goal.goal_name %></td>
+    <td><%= goal.goal_type %></td>
+    <td><%= goal.goal_details %></td>
+    <td><%= goal.obstacles %></td>
+    <td><%= goal.rate_experience %></td>
+  </tr>
+  <%end%>
+  </table>
+  <%end%>
+
+<br>
+<br>
+<h4><a href="/goals/<%@goal.id%>/edit">Edit what you want to try</a></h4>
+<br>
+<br>
+<h3><a href="/goal(s)/new">Create Something New</a></h3>
+<br>
+<br>
+<form action="/goal(s)/<%@goal.id%>" method="POST">
+<input id="hidden" type="hidden" name="_method" value="delete">
+<input type="submit" value="Delete">
+</form>
+
+
