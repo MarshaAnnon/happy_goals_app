@@ -4,12 +4,9 @@
 <h4><a href="/goals/new">Have something new you want to try?</a></h4>
 <br>
 <br>
-<% if current_user.goals != [] %>
-   <%= Would you like to create some things to try? %>
-<%end%>
 
-<h3>Here are your goals!</h3>
 <%if @user_goals%>
+<h3>Here are your goals!</h3>
 <table style="width:100%">
   <tr>
     <th>To try</th>
@@ -30,8 +27,6 @@
   <%end%>
   </table>
   <%end%>
-
-  
 <br>
 <br>
 
