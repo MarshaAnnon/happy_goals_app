@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
         end
     end
 
-    get "/logout" do
+    get "/sessions/logout" do
         session.clear
         redirect "/login"
     end

@@ -54,7 +54,6 @@ class GoalsController < ApplicationController
     end 
 
     delete "/goals/:id" do 
-        binding.pry
         @goal = Goal.find_by_id(params[:id])
         if @goal.user.id == current_user.id
             @goal.destroy

@@ -1,7 +1,15 @@
+<div class="index-wrapper">
+  <div class="index-image">
+  <br>
+  <br>
+  <br>
 <h1>Welcome, <%= current_user.name %>! </h1>
-<h3>Create New Things to Try</h3>
+<h2>Create New Things to Try</h2>
+</div>
 <br>
 <br>
+<h4>What would you like to try?</h4>
+<div class="new-form">
 <form action="/goals" method="post">
 <label for="goal_name">Want to try:</label>
 <br>
@@ -12,10 +20,9 @@
     <th>Timespan</th>
     <th>Details</th>
     <th>Hurdles</th>
-    <th>Rate Experience</th>
   </tr>
   <tr>
-    <td><input type="text" name="goal_name"></td>
+    <td><textarea name="goal_name"></textarea></td>
     <td><select id="goal_type" name="goal_type">
         <option value="daily">Daily</option>
         <option value="weekly">Weekly</option>
@@ -23,13 +30,13 @@
         <option value="yearly">Yearly</option>
     </select></td>
     <td><textarea name="goal_details"></textarea></td>
-    <td><input type="text" name="obstacles"></td>
-    <td><input type="text" name="rate_experience"></td>
+    <td><textarea name="obstacles"></textarea></td>
   </tr>
 </table>
 <br>
 <br>
-<input id="submit" type="submit" value="Submit">
+<button id="submit" type="submit">Update</Button>
 </form>
+</div>
 
   

@@ -11,22 +11,29 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600/Nunito+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="/stylesheets/main.css" />
+    
   </head>
   <body>
     
-    <h1>Break out of the norm &amp;<br>Try something new!</h1>
     <div class="wrapper">
-
+    
         <%= yield %>
 
       <footer class="branding">
       <% if logged_in? %>
       
-      <h4><a href="/logout">Log Out</h4>
+      <form action="/sessions/logout" method="GET">
+      <h4><button actionid="submit" type="submit">Log Out</Button></h4>
+      </form>
       <% end %>
       <br>
-        <small>&copy; 2020 <strong>HappyGoalsApp</strong></small>
+      <h5>By letting go of who you are, <span>You Become who You Could Be!</span></h5>
+        <h6>&copy; 2020 <strong>HappyGoalsApp</strong></h6>
       </footer>
     </div>
 

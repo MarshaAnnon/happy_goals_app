@@ -1,9 +1,11 @@
-<h1>Hi, <%= current_user.name %>!</h1>
+<div class="index-wrapper">
+  <div class="index-image">
+  <br>
+  <br>
+  <br>
+  <h1>Hi, <%= current_user.name %>!</h1>
 <h2>Why not try something new today!</h2>
-<br>
-<br>
-
-<h4><a href="/goals/new">Have something new you want to try?</a></h4>
+</div>
 <br>
 <br>
 <% if @goal %>
@@ -27,21 +29,12 @@
 
   </table>
   <%end%>
-
-<br>
-<br>
+  <section class="show-wrapper">
 <h4><a href="/goals/<%= @goal.id %>/edit">Edit what you want to try</a></h4>
-<br>
-<br>
 <h4><a href="/goals/new">Create Something New</a></h4>
-<br>
-<br>
-<h4>Would you like to delete this goal?</h4>
-<br>
-<br>
 <form action="/goals/<%= @goal.id %>" method="POST">
-<input id="hidden" type="hidden" name="_method" value="delete">
-<input type="submit" value="Delete">
+<input id="hidden" type="hidden" name="_method" value="DELETE">
+<button id="submit" type="delete">Delete this one</button>
 </form>
-
+</section>
 
