@@ -1,42 +1,42 @@
 <div class="index-wrapper">
   <div class="index-image">
+    <br>
+    <br>
+    <br>
+    <h1>Welcome, <%= current_user.name %>! </h1>
+    <h2>Create New Things to Try</h2>
+  </div>
   <br>
   <br>
-  <br>
-<h1>Welcome, <%= current_user.name %>! </h1>
-<h2>Create New Things to Try</h2>
-</div>
-<br>
-<br>
-<h4>What would you like to try?</h4>
-<div class="new-form">
-<form action="/goals" method="post">
-<label for="goal_name">Want to try:</label>
-<br>
-<br>
-<table style="width:100%">
-  <tr>
-    <th>To try</th>
-    <th>Timespan</th>
-    <th>Details</th>
-    <th>Hurdles</th>
-  </tr>
-  <tr>
-    <td><textarea name="goal_name"></textarea></td>
-    <td><select id="goal_type" name="goal_type">
-        <option value="daily">Daily</option>
-        <option value="weekly">Weekly</option>
-        <option value="monthly">Monthly</option>
-        <option value="yearly">Yearly</option>
-    </select></td>
-    <td><textarea name="goal_details"></textarea></td>
-    <td><textarea name="obstacles"></textarea></td>
-  </tr>
-</table>
-<br>
-<br>
-<button id="submit" type="submit">Update</Button>
-</form>
+    <h4>What would you like to try?</h4>
+    <div class="new-form">
+    <form action="/goals" method="post">
+    <label for="goal_name">Want to try:</label>
+    <br>
+    <br>
+    <table style="width:100%">
+      <tr>
+        <th>To try</th>
+        <th>Timespan</th>
+        <th>Details</th>
+        <th>Hurdles</th>
+      </tr>
+      <tr>
+        <td><textarea name="goal_name"></textarea></td>
+        <td><select id="goal_type" name="goal_type">
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="yearly">Yearly</option>
+          </select></td>
+          <td><textarea name="goal_details"></textarea></td>
+          <td><textarea name="obstacles"></textarea></td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <button id="submit" type="submit">Update</Button>
+  </form>
 </div>
 
   

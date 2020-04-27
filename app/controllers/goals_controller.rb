@@ -36,7 +36,6 @@ class GoalsController < ApplicationController
     end
 
     patch "/goals/:id" do 
-        
         @goal = Goal.find_by_id(params[:id])
         params.delete("_method")
         if @goal.update(params)
@@ -62,4 +61,5 @@ class GoalsController < ApplicationController
             redirect "/goals"
         end
     end
+    
 end

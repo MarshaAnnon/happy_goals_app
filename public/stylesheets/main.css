@@ -60,311 +60,310 @@ table {
   }
 
   
-body {
-  background-color: #fffdf9;
-  font-family: 'Nunito 800', sans-serif;
-  line-height: 18px;
-}
+  body {
+    background-color: #fffdf9;
+    font-family: 'Nunito 800', sans-serif;
+    line-height: 18px;
+  }
 
 /* --- Sign Up Page Styles --- */
 
-.signup-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  margin: 50px auto;
-  width: 95%;
-}
+  .signup-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 50px auto;
+    width: 95%;
+  }
 
-.signup-wrapper
-h1 {
-  color: #fffdf9;
-  font-family: 'Righteous', cursive;
-  font-size: 2em;
-  line-height: 1.2em;
-  margin-bottom: 20px;
-  text-align: center;
-}
+  .signup-wrapper
+  h1 {
+    color: #fffdf9;
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-.signup-wrapper,
-label {
-  color: #fffafb;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.25em;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  padding: 0 5px;
-}
+  .signup-wrapper,
+  label {
+    color: #fffafb;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 0 5px;
+  }
 
 /* --- Log In Page Styles --- */
 
-.login-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  margin: 50px auto;
-  width: 95%;
-}
+  .login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 50px auto;
+    width: 95%;
+  }
 
-#hero-area,
-.login-wrapper {
+  #hero-area,
+  .login-wrapper {
     height: 700px;
     background: url('/images/hero-image.png');
     background-size: cover;
-}
+  }
 
-.login-wrapper
- h1 {
-  color: #fffdf9;
-  font-family: 'Righteous', cursive;
-  font-size: 2em;
-  line-height: 1.2em;
-  margin-top: 60px;
-  margin-bottom: 45px;
-  text-align: center;
-}
+  .login-wrapper
+  h1 {
+    color: #fffdf9;
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-top: 60px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  .login-wrapper,
+  button { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    color:#BB5A26;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
 
-.login-wrapper,
-button { 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 8px;
-  color:#BB5A26;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 15px;
-  text-align: center;
-}
-
-.login-wrapper,
-button:hover {
+  .login-wrapper,
+  button:hover {
     background-color: #bb5a26;
     color: #fffafb;
-}
+  }
 
-.login-wrapper,
-label {
-  color: #fffafb;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.25em;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  padding: 0 5px;
-}
+  .login-wrapper,
+  label {
+    color: #fffafb;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 0 5px;
+  }
 
-.login-wrapper,
-input[type=text], 
-select, 
-textarea {
-  background-color: #fffafb;
-  width: auto; /* Full width */
-  padding: 10px; /* Some padding */ 
-  border: none;
-  border-radius: 8px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  font-family: 'Nunito 800', sans-serif;
-  margin-top: 12px; /* Add a top margin */
-  margin-bottom: 12px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+  .login-wrapper,
+  input[type=text], 
+  select, 
+  textarea {
+    background-color: #fffafb;
+    width: auto; /* Full width */
+    padding: 10px; /* Some padding */ 
+    border: none;
+    border-radius: 8px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    font-family: 'Nunito 800', sans-serif;
+    margin-top: 12px; /* Add a top margin */
+    margin-bottom: 12px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
 
-.login-wrapper
- h3 {
-  color: #fffdf9;
-  font-size: 1.4em;
-  margin-top: 40px;
-}
+  .login-wrapper
+   h3 {
+    color: #fffdf9;
+    font-size: 1.4em;
+    margin-top: 40px;
+  }
 
-.login-wrapper
-a {
-  color: #fffafb;
-  font-family: 'Nunito 800', sans-serif;
-}
+  .login-wrapper
+  a {
+    color: #fffafb;
+    font-family: 'Nunito 800', sans-serif;
+  }
 
 /* --- Index Page Styles --- */
 
-.index-wrapper,
-h1 {
-  color: #fffafb;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bold;
-  font-size: 3.5em;
-  margin-top: 175px;
-  margin-bottom: 40px;
-  text-align: center;
-}
+  .index-wrapper,
+  h1 {
+    color: #fffafb;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    margin-top: 175px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
 
-.index-wrapper,
-h2 {
-  color: #fffafb;
-  font-size: 2.5em;
-  line-height: 36px;
-  margin-bottom: 16px;
-  text-align: center;
-}
+  .index-wrapper,
+  h2 {
+    color: #fffafb;
+    font-size: 2.5em;
+    line-height: 36px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
 
-.index-wrapper
-h4,
-a {
-  color: #bb5a26;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding-top: 50px;
-  text-align: center;
-}
+  .index-wrapper
+  h4,
+  a {
+    color: #bb5a26;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 50px;
+    text-align: center;
+  }
 
-.index-wrapper
-h4 {
-  color: #bb5a26;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 50px;
-  padding-left: 30px;
-  text-align: left;
-}
+  .index-wrapper
+  h4 {
+    color: #bb5a26;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    text-align: left;
+  }
 
-.index-wrapper,
-h3 {
-  color: #bb5a26;
-  font-size: 1em;
-  line-height: 28px;
-  margin-bottom: 16px;
-  text-align: left;
-}
+  .index-wrapper,
+  h3 {
+    color: #bb5a26;
+    font-size: 1em;
+    line-height: 28px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
 
-.index-image,
-figure,
-img {
-    
+  .index-image,
+  figure,
+  img {
     height: 600px;
     background: url('/images/index-page.png');
     margin-top: -10rem;
     background: auto;
-}
+  }
 
-.index-form-wrapper
-.index2-form-wrapper
-table {
-  border-collapse: collapse; 
-  width: 98%;
-}
+  .index-form-wrapper
+  .index2-form-wrapper
+  table {
+   border-collapse: collapse; 
+   width: 98%;
+  }
 
-.index-form-wrapper,
-.index2-form-wrapper,
-th, 
-td {
-  padding: 0.75rem;
-  text-align: left;
-  border: 1px solid #BB5A26;
-}
+  .index-form-wrapper,
+  .index2-form-wrapper,
+  th, 
+  td {
+   padding: 0.75rem;
+   text-align: left;
+   border: 1px solid #BB5A26;
+  }
 
-.index-form-wrapper,
-.index2-form-wrapper,
-tbody,
-tr:hover {
-  background: #fffdf9;
-}
+  .index-form-wrapper,
+  .index2-form-wrapper,
+  tbody,
+  tr:hover {
+    background: #fffdf9;
+  }
 
-p {
-  margin-bottom: 18px;
-}
+  p {
+    color: #bb5a26;
+    margin-bottom: 1.1em;
+  }
 
-.index-wrapper,
-h3 {
-  color: #bb5a26;
-  font-size: 1em;
-  line-height: 28px;
-  margin-bottom: 16px;
-  text-align: left;
-}
+  .index-wrapper,
+  h3 {
+    color: #bb5a26;
+    font-size: 1em;
+    line-height: 28px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
 
 /* --- New Page Styles --- */
 
-.new-form,
-td,
-textarea {
-  color: #BB5A26;
-  font-size: 1em;
-  outline: none;
-  resize: none;
-}
+  .new-form,
+  td,
+  textarea {
+    color: #BB5A26;
+    font-size: 1em;
+    outline: none;
+    resize: none;
+  }
 
-.new-form,
-select,
-option {
-  color: #bb5a26;
-  padding: 10px;
-  margin: 70px;
-  font-size: 1.1em;
-  outline: none;
-  resize: none;
-}
+  .new-form,
+  select,
+  option {
+    color: #bb5a26;
+    padding: 10px;
+    margin: 70px;
+    font-size: 1.1em;
+    outline: none;
+    resize: none;
+  }
 
 /* --- Show Page Styles --- */
 
-footer,
+  footer,
   h5 {
-    background-color: #27270D;
+      background-color: #27270D;
+      color: #fffdf9;
+      font-family: 'Righteous', cursive;
+      font-size: 1.3em;
+      line-height: 24px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+  footer,
+  h6 {
     color: #fffdf9;
-    font-family: 'Righteous', cursive;
-    font-size: 1.3em;
+    font-size: 1em;
     line-height: 24px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin: 0 auto;
+    padding-bottom: 30px;
     text-align: center;
   }
-
-footer,
-h6 {
-  color: #fffdf9;
-  font-size: 1em;
-  line-height: 24px;
-  margin: 0 auto;
-  padding-bottom: 30px;
-  text-align: center;
-}
-}
+  }
 
 
-.main {
-  overflow: hidden;
-}
+  .main {
+    overflow: hidden;
+  }
 
-.content {
-  float: left;
-  width: 60%; /* 480px / 800px */
-}
+  .content {
+    float: left;
+    width: 60%; /* 480px / 800px */
+  }
 
-.sidebar {
-  background: #eee;
-  border: 1px solid #ccc;
-  float: right;
-  padding: 2.08333333333%; /* 5px / 240px */
-  width: 30%; /* 240px / 800px */
-}
+  .sidebar {
+    background: #eee;
+    border: 1px solid #ccc;
+    float: right;
+    padding: 2.08333333333%; /* 5px / 240px */
+   width: 30%; /* 240px / 800px */
+  }
 
-.sidebar ul {
-  font-size: 14px;
-}
+  .sidebar ul {
+    font-size: 14px;
+  }
 
-.branding {
-  clear: both;
-}
+  .branding {
+   clear: both;
+  }
 
-.error {
-  color: white;
-  background: #ff1717;
-  padding: 5px
-}
-}
+  .error {
+    color: #fffafb;
+    background: #bb5a26;
+    padding: 5px
+  }
+
 
 @media screen and (max-width: 600px) {
 .wrapper {

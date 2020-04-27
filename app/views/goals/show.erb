@@ -1,41 +1,39 @@
 <div class="index-wrapper">
   <div class="index-image">
+    <br>
+    <br>
+    <br>
+    <h1>Hi, <%= current_user.name %>!</h1>
+    <h2>Why not try something new today!</h2>
+  </div>
   <br>
   <br>
-  <br>
-  <h1>Hi, <%= current_user.name %>!</h1>
-<h2>Why not try something new today!</h2>
-</div>
-<br>
-<br>
-<% if @goal %>
-<h3>Here's current list of things you want to try!</h3>
-<table style="width:100%">
-  <tr>
-    <th>To try</th>
-    <th>Timespan</th>
-    <th>Details</th>
-    <th>Hurdles</th>
-    <th>Rate Experience</th>
-  </tr>
-
-    <tr>
-    <td><%= @goal.goal_name %></td>
-    <td><%= @goal.goal_type %></td>
-    <td><%= @goal.goal_details %></td>
-    <td><%= @goal.obstacles %></td>
-    <td><%= @goal.rate_experience %></td>
-  </tr>
-
-  </table>
+  <% if @goal %>
+    <h3>Here's current list of things you want to try!</h3>
+    <table style="width:100%">
+      <tr>
+        <th>To try</th>
+        <th>Timespan</th>
+        <th>Details</th>
+        <th>Hurdles</th>
+        <th>Rate Experience</th>
+      </tr>
+      <tr>
+        <td><%= @goal.goal_name %></td>
+        <td><%= @goal.goal_type %></td>
+        <td><%= @goal.goal_details %></td>
+        <td><%= @goal.obstacles %></td>
+        <td><%= @goal.rate_experience %></td>
+      </tr>
+    </table>
   <%end%>
   <section class="show-wrapper">
-<h4><a href="/goals/<%= @goal.id %>/edit">Edit what you want to try</a></h4>
-<h4><a href="/goals/new">Create Something New</a></h4>
-<form action="/goals/<%= @goal.id %>" method="POST">
-<input id="hidden" type="hidden" name="_method" value="DELETE">
-<button id="submit" type="delete">Delete this one</button>
-</form>
-<br>
-</section>
+    <h4><a href="/goals/<%= @goal.id %>/edit">Edit what you want to try</a></h4>
+    <h4><a href="/goals/new">Create Something New</a></h4>
+    <form action="/goals/<%= @goal.id %>" method="POST">
+    <input id="hidden" type="hidden" name="_method" value="DELETE">
+    <button id="submit" type="delete">Delete this one</button>
+    </form>
+    <br>
+  </section>
 

@@ -1,40 +1,40 @@
 <div class="index-wrapper">
   <div class="index-image">
-  <br>
-  <br>
-  <br>
-<h1>Welcome, <%= current_user.name %>! </h1>
-<h3>Edit your Try Something New</h3>
-</div>
-<form action="/goals/<%= @goal.id %>" method="post">
-<input id="hidden" type="hidden" name="_method" value="patch">
     <br>
     <br>
-    <table class="zebra"> 
-          <col>
-          <col>
-          <col>
-          <col>
-          <thead> 
-            <tr> 
-              <th>To try</th>
-              <th>Timespan</th>
-              <th>Details</th>
-              <th>Hurdles</th>
-              <th>Rate Experience</th>
-            </tr>
-          </thead>
-          <tbody>
-              <tr>
-                <td><%= @goal.goal_name %></td>
-                <td><%= @goal.goal_type %></td>
-                <td><%= @goal.goal_details %></td>
-                <td><%= @goal.obstacles %></td>
-                <td><%= @goal.rate_experience %></td>
-              </tr>
-          </tbody>
-        </table>
-        <br>
-        <button id="submit" type="submit">Save Changes</Button>
-        <br>
+    <br>
+    <h1>Welcome, <%= current_user.name %>! </h1>
+    <h3>Edit your Try Something New</h3>
+  </div>
+  <form action="/goals/<%= @goal.id %>" method="post">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <br>
+  <br>
+  <table class="zebra"> 
+    <col>
+    <col>
+    <col>
+    <col>
+    <thead> 
+      <tr> 
+        <th>To try</th>
+        <th>Timespan</th>
+        <th>Details</th>
+        <th>Hurdles</th>
+        <th>Rate Experience</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @goal.goal_name %></td>
+        <td><%= @goal.goal_type %></td>
+        <td><%= @goal.goal_details %></td>
+        <td><%= @goal.obstacles %></td>
+        <td><%= @goal.rate_experience %></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <button id="submit" type="submit">Save Changes</Button>
+  <br>
 </form>

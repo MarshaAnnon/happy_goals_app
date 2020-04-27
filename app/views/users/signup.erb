@@ -1,28 +1,23 @@
 <div class="index-image">
     <div class="signup-wrapper">
-  <br>
-  <br>
-  <br>
-    <% if @user && @user.errors %>
-        <% @user.errors.full_messages.each do | error | %>
-            <p class="error"><%= error %></p>
+        <br>
+        <br>
+        <br>
+        <% if @user && @user.errors %>
+            <% @user.errors.full_messages.each do | error | %>
+                <p class="error"><%= error %></p>
+            <% end %>
         <% end %>
-    <% end %>
-<h1>Sign Up Below</h1>
-
-<form action="/users" method="POST">
-
-    <label for="name">Name:</label>
-    <input id="name" type="text" name="name"><br>
-
-    <label for="email">Email:</label>
-    <input id="email" type="text" name="email"><br>
-
-    <label for="password">Password:</label>
-    <input id="password" type="text" name="password"><br>
-
-    <button id="submit" type="submit">Sign Up!</Button>
-
-</form>
-</div>
+        <h1>Sign Up Below</h1>
+        <form action="/users" method="POST">
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name"><br>
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email"><br>
+            <label for="password">Password:</label>
+            <input id="password" type="text" name="password">
+            <br>
+            <button id="submit" type="submit">Sign Up!</button>
+        </form>
+    </div>
 </div>
