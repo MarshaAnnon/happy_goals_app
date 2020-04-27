@@ -47,7 +47,7 @@ class GoalsController < ApplicationController
         
     get "/goals/:id" do 
         redirect_if_not_logged_in
-        @current_user = User.find(session[:user_id])
+        @user_goals = current_user.goals.all
         @goal = Goal.find_by_id(params[:id])
         erb :"goals/show"                      
     end 
