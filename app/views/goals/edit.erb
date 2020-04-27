@@ -1,44 +1,40 @@
+<div class="index-wrapper">
+  <div class="index-image">
+  <br>
+  <br>
+  <br>
 <h1>Welcome, <%= current_user.name %>! </h1>
 <h3>Edit your Try Something New</h3>
+</div>
 <form action="/goals/<%= @goal.id %>" method="post">
 <input id="hidden" type="hidden" name="_method" value="patch">
     <br>
     <br>
-    <h3>Name:</h3>
-    <p><%= @goal.goal_name %></p>
-    <input id="goal_name" type="text" name="goal_name" value="<%= @goal.goal_name %>">
-    
-    <br>
-    <br>
-    <h3>Goal Type:</h3>
-    <p><%= @goal.goal_type %></p>
-    <select id="goal_type" name="goal_type">
-        <option value="Daily">Daily</option>
-        <option value="Weekly">Weekly</option>
-        <option value="Monthly">Monthly</option>
-        <option value="Yearly">Yearly</option>
-    </select>
-    <br>
-    <br>
-    <h3>Details:</h3>
-    <p><%= @goal.goal_details %></p>
-    <input id="goal_details" type="text" name="goal_details" value="<%= @goal.goal_details %>">
-    <br>
-    <br>
-    <h3>Obstacles:</h3>
-    <p><%= @goal.obstacles %></p>
-    <input id="obstacles" type="text" name="obstacles" value="<%= @goal.obstacles %>">
-    <br>
-    <br>
-    <label for="rate_experience">Rate Experience:</label>
-    <select id="rate_experience" name="rate_experience" value="<%= @goal.rate_experience %>">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
-    <br>
-    <br>
-    <input id="submit" type="submit" value="Save Changes">
+    <table class="zebra"> 
+          <col>
+          <col>
+          <col>
+          <col>
+          <thead> 
+            <tr> 
+              <th>To try</th>
+              <th>Timespan</th>
+              <th>Details</th>
+              <th>Hurdles</th>
+              <th>Rate Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td><%= @goal.goal_name %></td>
+                <td><%= @goal.goal_type %></td>
+                <td><%= @goal.goal_details %></td>
+                <td><%= @goal.obstacles %></td>
+                <td><%= @goal.rate_experience %></td>
+              </tr>
+          </tbody>
+        </table>
+        <br>
+        <button id="submit" type="submit">Save Changes</Button>
+        <br>
 </form>

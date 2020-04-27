@@ -1,8 +1,13 @@
-<% if @user && @user.errors %>
-    <% @user.errors.full_messages.each do | error | %>
-        <p class="error"><%= error %></p>
+<div class="index-image">
+    <div class="signup-wrapper">
+  <br>
+  <br>
+  <br>
+    <% if @user && @user.errors %>
+        <% @user.errors.full_messages.each do | error | %>
+            <p class="error"><%= error %></p>
+        <% end %>
     <% end %>
-<% end %>
 <h1>Sign Up Below</h1>
 
 <form action="/users" method="POST">
@@ -16,6 +21,8 @@
     <label for="password">Password:</label>
     <input id="password" type="text" name="password"><br>
 
-    <input id="submit" type="submit" value="Submit">
+    <button id="submit" type="submit">Sign Up!</Button>
 
 </form>
+</div>
+</div>
