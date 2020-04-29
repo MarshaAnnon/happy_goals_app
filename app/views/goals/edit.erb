@@ -10,7 +10,7 @@
   <input id="hidden" type="hidden" name="_method" value="patch">
   <br>
   <br>
-  <table class="zebra"> 
+  <table class="zebra" style="width:100%"> 
     <col>
     <col>
     <col>
@@ -26,15 +26,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><%= @goal.goal_name %></td>
-        <td><%= @goal.goal_type %></td>
-        <td><%= @goal.goal_details %></td>
-        <td><%= @goal.obstacles %></td>
-        <td><%= @goal.rate_experience %></td>
+        <td><textarea name="goal_name"><%= @goal.goal_name %></textarea></td>
+        <td><select id="goal_type" name="goal_type">
+          <option value="day">Day</option>
+          <option value="week">Week</option>
+          <option value="month">Month</option>
+          <option value="year">Year</option>
+        </select></td>
+        <td><textarea name="goal_details"><%= @goal.goal_details %></textarea></td>
+        <td><textarea name="obstacles"><%= @goal.obstacles %></textarea></td>
+        <td><select id="goal_type" name="goal_type">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select></td>
       </tr>
     </tbody>
   </table>
+
   <br>
   <button id="submit" type="submit">Save Changes</Button>
   <br>
-</form>

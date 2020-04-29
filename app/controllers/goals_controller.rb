@@ -28,7 +28,7 @@ class GoalsController < ApplicationController
         redirect_if_not_logged_in
         @user = User.find(session[:user_id])
         @goal = Goal.find_by_id(params[:id])
-        if @goal.user.id == current_user.id
+        if @goal.user.id = current_user.id
             erb :"goals/edit"
         else
             redirect "/goals"
@@ -54,7 +54,7 @@ class GoalsController < ApplicationController
 
     delete "/goals/:id" do 
         @goal = Goal.find_by_id(params[:id])
-        if @goal.user.id == current_user.id
+        if @goal.user.id = current_user.id
             @goal.destroy
             redirect "/goals"
         else

@@ -7,10 +7,10 @@ class UsersController < ApplicationController
     post "/users" do #NEW ACTION
         @user = User.new(params)
         if @user && @user.save
-            session[:user_id] == @user.id
+            session[:user_id] = @user.id
             redirect "/goals"
         else
-            erb :"users/signup"
+            redirect "/users/signup"
         end
     end
 
