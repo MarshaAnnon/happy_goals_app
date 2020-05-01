@@ -8,10 +8,9 @@
   </div>
   <br>
   <br>
-  <h3>Here's current list of things you want to try!</h3>
+  <h3>Here's your newly added try something new!</h3>
   <div class="index-form-wrapper">
     
-    <%if @user_goals%>
       <table class="zebra" style="width:100%"> 
         <col>
         <col>
@@ -27,18 +26,15 @@
           </tr>
         </thead>
         <tbody>
-          <%@user_goals.each do | goal |%>
             <tr>
-              <td><%= goal.goal_name %></td>
-              <td><%= goal.goal_type %></td>
-              <td><%= goal.goal_details %></td>
-              <td><%= goal.obstacles %></td>
-              <td><%= goal.rate_experience %></td>
+              <td><%= @goal.goal_name %></td>
+              <td><%= @goal.goal_type %></td>
+              <td><%= @goal.goal_details %></td>
+              <td><%= @goal.obstacles %></td>
+              <td><%= @goal.rate_experience %></td>
             </tr>
-          <%end%>
         </tbody>
       </table>
-    <%end%>
   </div>
   <section class="show-wrapper">
     <h4><a href="/goals/<%= @goal.id %>/edit">Edit what you want to try</a></h4>
