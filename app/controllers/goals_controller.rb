@@ -16,7 +16,7 @@ class GoalsController < ApplicationController
     end
 
     post "/goals" do
-        @goals = Goal.new(goal_name: params[:goal_name],goal_type: params[:goal_type], goal_details: params[:goal_details], obstacles: params[:obstacles], user_id: current_user.id) 
+        @goals = current_user.goals.build(params)
         if @goals.save
             redirect "/goals/#{@goals.id}" 
         else 
