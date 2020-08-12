@@ -38,35 +38,35 @@
       </table>
     <%end%>
   </div>
-    <br>
-    <br>
-    <h4>Why not check out what others want to try too!</h4>
-    <div class="index2-form-wrapper">
-      <%if @goals%>
-        <table class="zebra"> 
-          <col>
-          <col>
-          <col>
-          <col>
-          <thead> 
-          <tr>
-            <th>To try</th>
-            <th>Timespan</th>
-            <th>Details</th>
-            <th>Hurdles</th>
-            <th>Rate Experience</th>
-          </tr>
-          <tbody>
-            <%@goals.each do | goal |%>
-              <tr>
-                <td><%= goal.goal_name %></td>
-                <td><%= goal.goal_type %></td>
-                <td><%= goal.goal_details %></td>
-                <td><%= goal.obstacles %></td>
-                <td><%= goal.rate_experience %></td>
-              </tr>
-          </tbody> 
+  <br>
+  <br>
+  <h4>Why not check out what others want to try too!</h4>
+  <div class="index2-form-wrapper">
+    <%if @goals%>
+      <table class="zebra"> 
+        <col>
+        <col>
+        <col>
+        <col>
+        <thead> 
+        <tr>
+          <th>To try</th>
+          <th>Timespan</th>
+          <th>Details</th>
+          <th>Hurdles</th>
+          <th>Rate Experience</th>
+        </tr>
+        <tbody>
+          <%@goals.each do | goal |%>
+            <tr>
+              <td><%= goal.goal_name %></td>
+              <td><%= goal.goal_type %></td>
+              <td><%= goal.goal_details %></td>
+              <td><%= goal.obstacles %></td>
+              <td><%= goal.rate_experience %></td>
+            </tr>
           <%end%>
-        </table>
-      <%end%>
-    </div>
+        </tbody> 
+      </table>
+    <%end%>
+  </div>
