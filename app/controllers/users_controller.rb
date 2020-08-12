@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
 
-    get "/signup" do #NEW ACTION
+    get "/signup" do
         erb :"users/signup"
     end
 
-    post "/users" do #NEW ACTION
+    post "/users" do
         @user = User.new(params)
         if @user && @user.save
             session[:user_id] = @user.id
