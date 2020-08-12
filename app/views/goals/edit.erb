@@ -7,44 +7,50 @@
     <h3>Edit your Try Something New</h3>
   </div>
   <form action="/goals/<%= @goal.id %>" method="post">
-  <input id="hidden" type="hidden" name="_method" value="patch">
-  <br>
-  <br>
-  <table class="zebra" style="width:100%"> 
-    <col>
-    <col>
-    <col>
-    <col>
-    <thead> 
-      <tr> 
-        <th>To try</th>
-        <th>Timespan</th>
-        <th>Details</th>
-        <th>Hurdles</th>
-        <th>Rate Experience</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><textarea name="goal_name"><%= @goal.goal_name %></textarea></td>
-        <td><select id="goal_type" name="goal_type">
-          <option value="day">Day</option>
-          <option value="week">Week</option>
-          <option value="month">Month</option>
-          <option value="year">Year</option>
-        </select></td>
-        <td><textarea name="goal_details"><%= @goal.goal_details %></textarea></td>
-        <td><textarea name="obstacles"><%= @goal.obstacles %></textarea></td>
-        <td><select id="rate_experience" name="rate_experience">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-    </select></td>
-      </tr>
-    </tbody>
-  </table>
+    <input id="hidden" type="hidden" name="_method" value="patch">
+    <br>
+    <br>
+    <table class="zebra" style="width:100%"> 
+      <col>
+      <col>
+      <col>
+      <col>
+      <thead> 
+        <tr> 
+          <th>To try</th>
+          <th>Timespan</th>
+          <th>Details</th>
+          <th>Hurdles</th>
+          <th>Rate Experience</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>< name="goal_name"><%= @goal.goal_name %></ textarea></td>
+          <td>
+            <select id="goal_type" name="goal_type">
+              <option value="day">Day</option>
+              <option value="week">Week</option>
+              <option value="month">Month</option>
+              <option value="year">Year</option>
+            </select>
+          </td>
+          <td>
+            <textarea name="goal_details"><%= @goal.goal_details  %></textarea>
+          </td>
+          <td>< name="obstacles"><%= @goal.obstacles %></td>
+          <td>
+            <select id="rate_experience" name="rate_experience">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-  <br>
-  <button id="submit" type="submit">Save Changes</Button>
-  <br>
+    <br>
+    <button id="submit" type="submit">Save Changes</Button>
+    <br>
