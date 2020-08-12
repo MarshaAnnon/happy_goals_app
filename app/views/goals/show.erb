@@ -10,38 +10,37 @@
   <br>
   <h3>Here's your newly added try something new!</h3>
   <div class="index-form-wrapper">
-    
-      <table class="zebra" style="width:100%"> 
-        <col>
-        <col>
-        <col>
-        <col>
-        <thead> 
-          <tr> 
-            <th>To try</th>
-            <th>Timespan</th>
-            <th>Details</th>
-            <th>Hurdles</th>
-            <th>Rate Experience</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <td><%= @goal.goal_name %></td>
-              <td><%= @goal.goal_type %></td>
-              <td><%= @goal.goal_details %></td>
-              <td><%= @goal.obstacles %></td>
-              <td><%= @goal.rate_experience %></td>
-            </tr>
-        </tbody>
-      </table>
+    <table class="zebra" style="width:100%"> 
+      <col>
+      <col>
+      <col>
+      <col>
+      <thead> 
+        <tr> 
+          <th>To try</th>
+          <th>Timespan</th>
+          <th>Details</th>
+          <th>Hurdles</th>
+          <th>Rate Experience</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= @goal.goal_name %></td>
+          <td><%= @goal.goal_type %></td>
+          <td><%= @goal.goal_details %></td>
+          <td><%= @goal.obstacles %></td>
+          <td><%= @goal.rate_experience %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <section class="show-wrapper">
     <h4><a href="/goals/<%= @goal.id %>/edit">Edit what you want to try</a></h4>
     <h4><a href="/goals/new">Create Something New</a></h4>
     <form action="/goals/<%= @goal.id %>" method="POST">
-    <input id="hidden" type="hidden" name="_method" value="DELETE">
-    <button id="submit" type="delete">Delete an item</button>
+      <input id="hidden" type="hidden" name="_method" value="DELETE">
+      <button id="submit" type="delete">Delete an item</button>
     </form>
     <br>
   </section>
